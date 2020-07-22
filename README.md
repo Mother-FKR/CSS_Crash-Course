@@ -11,4 +11,46 @@
 
 最后，你可能会问为什么学习笔记不放在你的博客上而是在GitHub上？emmm老实说我也又放在博客上，但是这不打算给博客翻新嘛，到时候给文章搬家太麻烦啦，所以就先放这里咯，顺便也给自己做个备份。（手动滑稽）
 
+## 目录
+- 开始之前
 
+
+## [0]开始之前
+- 这是为初学者准备的
+- 必须学过 `HTML` 的内容 / 有一定的基础
+- 不会涉及 `Flexbox`，`Animation`，`Transition`
+- `Keynote` + 示例
+- 保持耐心
+  
+## [1]开始之前需要的准备
+- 浏览器
+  - Google Chrome
+  - Mozilla Firefox
+  - Safari
+  - Edge
+- 编辑器
+  - Visual Studio Code
+  - Sublime Text
+  - Atom
+- 即使编辑器
+  - codepen.io
+
+## [2]什么是CSS？
+- `Cascading Stylesheets` / 层叠样式表
+- 与 `HTML` 一样**不是编程语言**
+- 用于告诉浏览器如何指定 `样式` 和 `布局` 等等
+- 通常与 `HTML`，`XML` 一起工作
+
+## [3]CSS结构
+这里我直接使用一个例子来讲解CSS结构：⬇️
+```html
+<p>Lorem ipsum dolor sit amet</p>  <!--一个段落-->
+```
+上面这段是HTML，如果想让字变成红色，那么你需要使用CSS来构造：⬇️
+```css
+p{ /* p为 “Selector / 选择器” */
+    color:red; 
+}  /* 这里的color为 “Property / 属性” ， red为 “Value / 值” */
+   /*注意 red 后面的 “；” ， 一定要加！养成这种习惯！
+```
+其中这里的 `p` 为 `Selector` 或者 `选择器`。 它就代表着上面 `HTML`里的那个 `p`，在大括号 `{}` 内的所有参数都将运用到这个 `p` 里。`color` 为 `Property` 或者 `属性`，`red` 为 `Value` 或者 `值`，最后在每个参数的结尾都要加一个分号 `；` 以说明该参数到此为止。
