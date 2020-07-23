@@ -54,3 +54,35 @@ p{ /* p为 “Selector / 选择器” */
    /*注意 red 后面的 “；” ， 一定要加！养成这种习惯！
 ```
 其中这里的 `p` 为 `Selector` 或者 `选择器`。 它就代表着上面 `HTML`里的那个 `p`，在大括号 `{}` 内的所有参数都将运用到这个 `p` 里。`color` 为 `Property` 或者 `属性`，`red` 为 `Value` 或者 `值`，最后在每个参数的结尾都要加一个分号 `；` 以说明该参数到此为止。
+
+## [4]添加CSS
+- 外部样式表 
+  - `CSS` 保存在 `.css` 文件中
+  - 在 `HTML` 里使用 `<link>` 引用
+- 内部样式表
+  - 不使用外部 `CSS` 文件
+  - 将 `CSS` 放在 `HTML` `<style>` 里
+- 内敛样式
+  - 仅影响一个元素
+  - 在 `HTML` 元素的 `style` 属性中添加
+
+### [4-1]具体实例
+详情请查看 `CSS` 文件夹里的 `index.html`。
+```html
+<!-- 外部样式表 -->
+<link rel="stylesheet" href="./style.css"> <!-- 切记要先把css与html进行链接！ -->
+
+<!-- 内部样式表 -->
+    <style>  /* style 应写在 head 里 */
+        h1 {
+            color: rgb(0, 255, 255);
+        }
+    </style>
+    .....
+    <h1>Hello World!</h1> <!-- h1 应写在 body 里 -->
+
+<!-- 内敛样式 -->
+    <h1 style=color: rgb(0, 255, 255)>Hello World!</h>
+```
+具体效果：   
+![4-1-1](image/4-1-1.png)
